@@ -1,0 +1,114 @@
+
+[ 
+	{ 
+		"name" : "Birds", 
+		"guides" : [ 
+			{ 
+				"title": "Bird Sounds NZ",
+				"organisation" : "",
+				"accessiblity" : "friendly",
+				"url" : "https://www.birdsounds.nz/",
+				"summary" : "???"
+			}
+		]
+	},
+	{ 
+		"name" : "Insects And Critters", 
+		"guides" : [ 
+			{ 
+				"title": "Guide to New Zealand Soil Invertebrates",
+				"organisation" : "Massey",
+				"accessiblity" : "friendly",
+				"url" : "http://soilbugs.massey.ac.nz/index.php",
+				"summary" : "Information on critters that live in the soil; insects, snails, worms, millipedes, centipedes etc."
+			},
+			{ 
+				"title": "?????",
+				"organisation" : "",
+				"accessiblity" : "friendly",
+				"url" : "https://nzbutterfly.info/id/index.htm",
+				"summary" : "????"
+			},
+			{ 
+				"title": "?????",
+				"organisation" : "",
+				"accessiblity" : "friendly",
+				"url" : "https://teara.govt.nz/en/interactive/15743/bumblebee-distribution",
+				"summary" : "????"
+			}
+		]
+	}, 
+	{ 
+		"name" : "Footprints And Tracks", 
+		"guides" : [ 
+			{ 
+				"title": "Footprint Project",
+				"organisation" : "iNaturalist",
+				"accessiblity" : "friendly",
+				"url" : "https://inaturalist.nz/projects/animal-footprints-in-nz",
+				"summary" : "A collection of observations of animal footprints/sign."
+			}, 
+			{ 
+				"title": "NZ Tracker",
+				"organisation" : "",
+				"accessiblity" : "friendly",
+				"url" : "https://www.nztracker.org/",
+				"summary" : "Helps with the identifications of animal sign (mostly footprints)."
+			},
+			{ 
+				"title": "Pest Detective",
+				"organisation" : "",
+				"accessiblity" : "friendly",
+				"url" : "https://www.pestdetective.org.nz/",
+				"summary" : "An interactive online field guide to help people in New Zealand identify the presence of pest animal species."
+			},
+			{ 
+				"title": "Tracking Tunnel Footprint Guide",
+				"organisation" : "DoC",
+				"accessiblity" : "friendly",
+				"url" : "https://www.doc.govt.nz/globalassets/documents/our-work/predator-free-2050/a-short-guide-to-identifying-footprints-on-tracking-tunnel-papers.pdf",
+				"summary" : "A short guide for identifying footprints on tracking tunnel papers."
+			} 
+		]
+	}, 
+	{ 
+		"name" : "Ocean Stuff", 
+		"guides" : [
+			{ 
+				"title": "Whats My Crab",
+				"organisation" : "",
+				"accessiblity" : "friendly",
+				"url" : "http://www.whatsmycrab.co.nz/",
+				"summary" : "Interactive crab guide."
+			},
+			{ 
+				"title": "Coastal Crabs",
+				"organisation" : "NIWA",
+				"accessiblity" : "friendly",
+				"url" : "https://niwa.co.nz/static/web/coastal_crabs_2015.pdf",
+				"summary" : "PDF crab guide."
+			},
+			{ 
+				"title": "Brachyura and Crab-like Anomura of New Zealand",
+				"organisation" : "",
+				"accessiblity" : "scientific",
+				"url" : "https://decapoda.nhm.org/pdfs/12336/",
+				"summary" : "PDFs with detailed descriptions of crabs."
+			},
+			{ 
+				"title": "The Marine Fauna of New Zealand: Family Hymenosomatidae",
+				"organisation" : "",
+				"accessiblity" : "scientific",
+				"url" : "https://docs.niwa.co.nz/library/public/Memoir%20034_Marine%20Fauna%20of%20NZ%20-%20Family%20Hymenosomatidea%20-%201975.pdf",
+				"summary" : "PDF with details of Family Hymenosomatidae crabs."
+			},
+			{ 
+				"title": "Marine Egss Project",
+				"organisation" : "iNaturalist",
+				"accessiblity" : "friendly",
+				"url" : "https://inaturalist.nz/projects/marine-eggs-nz",
+				"summary" : "A collection of observations of marine eggs."
+			}
+		]
+	}
+]
