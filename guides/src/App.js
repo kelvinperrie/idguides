@@ -16,7 +16,6 @@ function Square({value, onSquareClick }) {
 }
 
 function Guide({guide}) {
-  
 
   return (
     <div className="guide">
@@ -28,17 +27,20 @@ function Guide({guide}) {
   )
 }
 
-function Set({theSet, index}) {
-  console.log(theSet)
+function Set({set,showFriendly,showScientific}) {
 
-  let elementId = "Set_" + theSet.name.replaceAll(" ", "_");
+  let elementId = "Set_" + set.name.replaceAll(" ", "_");
 
-  const guideRender = theSet.guides.map((guide,index) => {
+  const filteredGuides = set.guides.filter(guide => {
+    return (showFriendly && guide.accessiblity === "friendly") || (showScientific && guide.accessiblity === "scientific");
+  });
+
+  const guideRender = filteredGuides.map((guide,index) => {
     return (<Guide guide={guide} key={index} />);
   });
 
   return <div className="set" id={elementId}>
-      <div className='set-title'>{theSet.name}</div>
+      <div className='set-title'>{set.name}</div>
       <div className="guides-container">
         {guideRender}
       </div>
@@ -48,8 +50,6 @@ function Set({theSet, index}) {
 function MenuItem({set}) {
   
   let elementId = "#" + "Set_" + set.name.replaceAll(" ", "_");
-
-
   return (
     <div>
       <a href={elementId}>{set.name}</a>
@@ -72,30 +72,32 @@ function Menu({allData}) {
   )
 }
 
-function Board() {
-  const [squares, setSquares] = useState(Array(9).fill(null));
-  const [xIsNext, setXIsNext] = useState(true);
+function LevelOptions({showFriendly, showScientific, handleLevelClick}) {
 
-  console.log(setData);
+  let friendlyButtonStyle = showFriendly ? "btn btn-success" : "btn btn-outline-secondary";
+  let scientificButtonStyle = showScientific ? "btn btn-success" : "btn btn-outline-secondary";
+
+  return (
+    <div className="level-options">
+      What type of guides do you want to see? 
+      <button type="button" onClick={() => handleLevelClick('friendly')} className={friendlyButtonStyle}>Friendly</button>
+      <button type="button" onClick={() => handleLevelClick('scientific')} className={scientificButtonStyle}>Scientific</button>
+    </div>
+  );
+}
+
+function App() {
+  const [showFriendly, setShowFriendly] = useState(true);
+  const [showScientific, setShowScientific] = useState(false);
 
   var sets = setData;
 
-  const setsRender = sets.map((aset,index) => {
-    //console.log("aset is:" + aset.name)
-    return (
-        <Set theSet={aset} index={index} key={index}/>
-    );
-  });
-
-  function handleClick(i) {
-    const nextSquares = squares.slice();
-    if (xIsNext) {
-      nextSquares[i] = "X";
+  function handleLevelClick(level) {
+    if(level === "friendly") {
+      setShowFriendly(!showFriendly);
     } else {
-      nextSquares[i] = "O";
+      setShowScientific(!showScientific);
     }
-    setSquares(nextSquares);
-    setXIsNext(!xIsNext);
   }
 
   return (
@@ -106,58 +108,14 @@ function Board() {
           <Menu allData={sets}/>
         </div>
         <div className="col">
-          
-        {setsRender}
+          <LevelOptions showFriendly={showFriendly} showScientific={showScientific} handleLevelClick={handleLevelClick} />
+          {sets.map((set,index) => ( <Set set={set} key={index} showFriendly={showFriendly} showScientific={showScientific}/> ))}
         </div>
       </div>
     </div>
-    <div>
-    </div>
-      <div className="board-row">
-        <Square value={squares[0]} onSquareClick={()=>handleClick(0)}/>
-        <Square value={squares[1]} onSquareClick={()=>handleClick(1)}/>
-        <Square value={squares[2]} onSquareClick={()=>handleClick(2)}/>
-      </div>
-      <div className="board-row">
-        <Square value={squares[3]} onSquareClick={()=>handleClick(3)}/>
-        <Square value={squares[4]} onSquareClick={()=>handleClick(4)}/>
-        <Square value={squares[5]} onSquareClick={()=>handleClick(5)}/>
-      </div>
-      <div className="board-row">
-        <Square value={squares[6]} onSquareClick={()=>handleClick(6)}/>
-        <Square value={squares[7]} onSquareClick={()=>handleClick(7)}/>
-        <Square value={squares[8]} onSquareClick={()=>handleClick(8)}/>
-      </div>
     </>
   );
 }
 
-function ThisSucks() {
-  return (<div>CRAP</div>)
-}
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <p>
-          {ThisSucks()}
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
-
-export default Board;
+export default App;
