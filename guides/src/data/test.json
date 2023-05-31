@@ -4,11 +4,18 @@
 		"name" : "Birds", 
 		"guides" : [ 
 			{ 
+				"title": "NZ Birds Online",
+				"organisation" : "",
+				"accessiblity" : "friendly",
+				"url" : "https://www.nzbirdsonline.org.nz/",
+				"summary" : "Bird guide with photos and sounds to help with identifications."
+			},
+			{ 
 				"title": "Bird Sounds NZ",
 				"organisation" : "",
 				"accessiblity" : "friendly",
 				"url" : "https://www.birdsounds.nz/",
-				"summary" : "???"
+				"summary" : ""
 			}
 		]
 	},
@@ -20,21 +27,27 @@
 				"organisation" : "Massey",
 				"accessiblity" : "friendly",
 				"url" : "http://soilbugs.massey.ac.nz/index.php",
-				"summary" : "Information on critters that live in the soil; insects, snails, worms, millipedes, centipedes etc."
+				"summary" : "Multiple guides on critters that live in the soil; insects, snails, worms, millipedes, centipedes etc."
 			},
 			{ 
-				"title": "?????",
+				"title": "A Photographic Guide to Freshwater Invertebrates of Taranaki's Rivers and Streams",
+				"organisation" : "Taranaki Regional Council",
+				"accessiblity" : "friendly",
+				"url" : "https://www.trc.govt.nz/assets/Documents/Research-reviews/Freshwater/Photographic-Guide-sm.pdf",
+				"summary" : "Includes things like mayfiles, damselfiles, worms, snails, files."
+			},			{ 
+				"title": "New Zealand Butterfly Identification Guide",
 				"organisation" : "",
 				"accessiblity" : "friendly",
 				"url" : "https://nzbutterfly.info/id/index.htm",
-				"summary" : "????"
+				"summary" : "A website with pictures to help identify butterflies."
 			},
 			{ 
-				"title": "?????",
-				"organisation" : "",
+				"title": "Bumblebee distribution",
+				"organisation" : "Ta Ara",
 				"accessiblity" : "friendly",
 				"url" : "https://teara.govt.nz/en/interactive/15743/bumblebee-distribution",
-				"summary" : "????"
+				"summary" : "Identification patterns of bumblebees and their distribution through NZ."
 			}
 		]
 	}, 
@@ -75,18 +88,25 @@
 		"name" : "Ocean Stuff", 
 		"guides" : [
 			{ 
-				"title": "Whats My Crab",
+				"title": "New Zealand Fishes Volume 3",
+				"organisation" : "Ministry of Fisheries",
+				"accessiblity" : "friendly",
+				"url" : "https://fs.fish.govt.nz/Doc/22896/AEBR_69.pdf.ashx",
+				"summary" : "A field guide to common species caught by surface fishing."
+			},
+			{ 
+				"title": "What's My Crab",
 				"organisation" : "",
 				"accessiblity" : "friendly",
 				"url" : "http://www.whatsmycrab.co.nz/",
-				"summary" : "Interactive crab guide."
+				"summary" : "Interactive crab guide to help with identification."
 			},
 			{ 
-				"title": "Coastal Crabs",
+				"title": "Various NIWA guides",
 				"organisation" : "NIWA",
 				"accessiblity" : "friendly",
-				"url" : "https://niwa.co.nz/static/web/coastal_crabs_2015.pdf",
-				"summary" : "PDF crab guide."
+				"url" : "https://niwa.co.nz/oceans/resources/marine-identification-guides-and-fact-sheets",
+				"summary" : "A range of guides including: Sea anemones, sea squirts, sea weeds, barnacles, bryozoans, crabs, sea starts, brittle stars, sea cucumbers, jellyfish, sponges, sea slugs."
 			},
 			{ 
 				"title": "Brachyura and Crab-like Anomura of New Zealand",
@@ -108,6 +128,39 @@
 				"accessiblity" : "friendly",
 				"url" : "https://inaturalist.nz/projects/marine-eggs-nz",
 				"summary" : "A collection of observations of marine eggs."
+			},
+			{ 
+				"title": "New Zealand Mollusca",
+				"organisation" : "",
+				"accessiblity" : "friendly",
+				"url" : "http://www.mollusca.co.nz/identify.php",
+				"summary" : "An interactive shell guide - identify commonly encountered species by shape and form."
+			},
+			{ 
+				"title": "Black Sea Snail Field Guide",
+				"organisation" : "",
+				"accessiblity" : "friendly",
+				"url" : "https://blackseasnailfieldguide.vercel.app/",
+				"summary" : "A field guide for black sea snails (dilomas and others)."
+			},
+			{ 
+				"title": "NZ Shells",
+				"organisation" : "",
+				"accessiblity" : "friendly",
+				"url" : "http://www.nzshells.net.nz/",
+				"summary" : "Pictures of NZ shells."
+			}
+		]
+	},
+	{ 
+		"name" : "Plants And Their Buddies", 
+		"guides" : [ 
+			{ 
+				"title": "Identify New Zealand's common tree ferns",
+				"organisation" : "Te Papa",
+				"accessiblity" : "friendly",
+				"url" : "https://blog.tepapa.govt.nz/2019/12/20/identifying-new-zealands-common-tree-ferns-ponga-mamaku-katote-wheki-and-wheki-ponga/?cn-reloaded=1",
+				"summary" : "Identify New Zealand's common tree ferns: ponga, mamaku, kātote, whekī, and whekī ponga"
 			}
 		]
 	}

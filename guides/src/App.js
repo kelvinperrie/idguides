@@ -17,10 +17,12 @@ function Square({value, onSquareClick }) {
 
 function Guide({guide}) {
 
+  let organisation = guide.organisation != "" ? <span> ({guide.organisation})</span> : "";
+
   return (
     <div className="guide">
       <div className="guide-title">
-        <a href={guide.url}>{guide.title}</a>
+        <a href={guide.url}>{guide.title}{organisation}</a>
       </div>
       <div className="guide-summary">{guide.summary}</div>
     </div>
