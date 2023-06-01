@@ -21,8 +21,8 @@ function Guide({guide}) {
 
   return (
     <div className="guide">
-      <div className="guide-title">
-        <a href={guide.url}>{guide.title}{organisation}</a>
+      <div className="guide-title">{guide.title}{organisation}
+        {/* <a href={guide.url}>{guide.title}{organisation}</a> */}
       </div>
       <div className="guide-summary">{guide.summary}</div>
     </div>
