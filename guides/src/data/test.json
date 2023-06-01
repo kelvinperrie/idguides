@@ -21,6 +21,7 @@
 	},
 	{ 
 		"name" : "Insects And Critters", 
+		"icon" : "emoji_nature",
 		"guides" : [ 
 			{ 
 				"title": "Guide to New Zealand Soil Invertebrates",
@@ -53,6 +54,7 @@
 	}, 
 	{ 
 		"name" : "Footprints And Tracks", 
+		"icon" : "pets",
 		"guides" : [ 
 			{ 
 				"title": "Footprint Project",
@@ -86,6 +88,7 @@
 	}, 
 	{ 
 		"name" : "Ocean Stuff", 
+		"icon" : "waves",
 		"guides" : [
 			{ 
 				"title": "New Zealand Fishes Volume 3",
@@ -161,6 +164,7 @@
 	},
 	{ 
 		"name" : "Plants And Their Buddies", 
+		"icon" : "park",
 		"guides" : [ 
 			{ 
 				"title": "Identify New Zealand's common tree ferns",

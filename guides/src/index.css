@@ -51,6 +51,7 @@ code {
   margin: .5em;
   padding: 1em;
   border-radius: 10px;
+  position: relative;
 }
 
 .guide-title {
@@ -67,4 +68,15 @@ code {
 
 .level-options button {
   margin: 0 0.5em;
+}
+
+.open-guide-icon {
+  position: absolute;
+  font-size: 20px;
+  right: 5px;
+  top: 5px;
+}
+
+a .open-guide-icon {
+  color: #D7BA7D;
 }

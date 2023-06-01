@@ -21,8 +21,9 @@ function Guide({guide}) {
 
   return (
     <div className="guide">
-      <div className="guide-title">{guide.title}{organisation}
-        {/* <a href={guide.url}>{guide.title}{organisation}</a> */}
+      <a href={guide.url} target="_blank"><span title="open this guide in a new window" class="material-symbols-outlined open-guide-icon">open_in_new</span></a>
+      <div className="guide-title">
+        {guide.title}{organisation}
       </div>
       <div className="guide-summary">{guide.summary}</div>
     </div>
@@ -33,6 +34,8 @@ function Set({set,showFriendly,showScientific}) {
 
   let elementId = "Set_" + set.name.replaceAll(" ", "_");
 
+  let icon = set.icon ? <span class="material-symbols-outlined">{set.icon}</span> : "";
+
   const filteredGuides = set.guides.filter(guide => {
     return (showFriendly && guide.accessiblity === "friendly") || (showScientific && guide.accessiblity === "scientific");
   });
@@ -42,7 +45,7 @@ function Set({set,showFriendly,showScientific}) {
   });
 
   return <div className="set" id={elementId}>
-      <div className='set-title'>{set.name}</div>
+      <div className='set-title'>{set.name} {icon}</div>
       <div className="guides-container">
         {guideRender}
       </div>
@@ -68,9 +71,12 @@ function Menu({allData}) {
   });
 
   return (
+    <>
     <div className="menu">
+    Jump to section:
       {menuItemsRender}
     </div>
+    </>
   )
 }
 
