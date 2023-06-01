@@ -15,7 +15,7 @@
 				"organisation" : "",
 				"accessiblity" : "friendly",
 				"url" : "https://www.birdsounds.nz/",
-				"summary" : ""
+				"summary" : "Listen to the bird sounds of New Zealand."
 			}
 		]
 	},
@@ -79,7 +79,7 @@
 			},
 			{ 
 				"title": "Tracking Tunnel Footprint Guide",
-				"organisation" : "DoC",
+				"organisation" : "DOC",
 				"accessiblity" : "friendly",
 				"url" : "https://www.doc.govt.nz/globalassets/documents/our-work/predator-free-2050/a-short-guide-to-identifying-footprints-on-tracking-tunnel-papers.pdf",
 				"summary" : "A short guide for identifying footprints on tracking tunnel papers."

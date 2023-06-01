@@ -1,7 +1,7 @@
-import logo from './logo.svg';
+
 import './App.css';
 import { useState } from 'react';
-import setData from './data/test.json'
+import setData from './data/guideData.json'
 
 
 function Square({value, onSquareClick }) {
@@ -81,6 +81,11 @@ function Menu({allData}) {
     Jump to section:
       {menuItemsRender}
     </div>
+    <div className="github-link-container">
+      <div className="github-link">
+        <a href="https://github.com/kelvinperrie/idguides" target="_blank">See repository on GitHub<img src="GitHub-Mark-32px.png" alt="github logo"></img></a>
+      </div>
+    </div>
     </>
   )
 }
@@ -117,10 +122,10 @@ function App() {
     <>
     <div className="container">
       <div className="row">
-        <div className="col-3">
+        <div className="col-md-3">
           <Menu allData={sets}/>
         </div>
-        <div className="col">
+        <div className="col-md-9">
           <LevelOptions showFriendly={showFriendly} showScientific={showScientific} handleLevelClick={handleLevelClick} />
           {sets.map((set,index) => ( <Set set={set} key={index} showFriendly={showFriendly} showScientific={showScientific}/> ))}
         </div>
