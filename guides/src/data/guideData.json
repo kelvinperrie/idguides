@@ -31,6 +31,20 @@
 				"summary" : "Multiple guides on critters that live in the soil; insects, snails, worms, millipedes, centipedes etc."
 			},
 			{ 
+				"title": "What is this bug?",
+				"organisation" : "Landcare Research",
+				"accessiblity" : "friendly",
+				"url" : "https://www.landcareresearch.co.nz/tools-and-resources/identification/what-is-this-bug/",
+				"summary" : "A interactive tool to help you identify bugs found around Aotearoa New Zealand."
+			},
+			{ 
+				"title": "Stinkbugs",
+				"organisation" : "Landcare Research",
+				"accessiblity" : "friendly",
+				"url" : "https://www.landcareresearch.co.nz/tools-and-resources/identification/pentatomidae/quick-key/",
+				"summary" : "A guide to help id stink bugs/Pentatomidae of NZ"
+			},
+			{ 
 				"title": "A Photographic Guide to Freshwater Invertebrates of Taranaki's Rivers and Streams",
 				"organisation" : "Taranaki Regional Council",
 				"accessiblity" : "friendly",
@@ -90,6 +104,20 @@
 		"name" : "Ocean Stuff", 
 		"icon" : "waves",
 		"guides" : [
+			{ 
+				"title": "New Zealand Fishes Volume 1",
+				"organisation" : "Ministry of Fisheries",
+				"accessiblity" : "friendly",
+				"url" : "https://fs.fish.govt.nz/Doc/22895/AEBR_68.pdf.ashx",
+				"summary" : "A field guide to common species caught by bottom and midwater fishing."
+			},
+			{ 
+				"title": "New Zealand Fishes Volume 2",
+				"organisation" : "Ministry of Fisheries",
+				"accessiblity" : "friendly",
+				"url" : "https://fs.fish.govt.nz/Doc/22897/AEBR_78.pdf.ashx",
+				"summary" : "A field guide to less common species caught by bottom and midwater fishing."
+			},
 			{ 
 				"title": "New Zealand Fishes Volume 3",
 				"organisation" : "Ministry of Fisheries",
