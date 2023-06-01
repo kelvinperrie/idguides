@@ -35,22 +35,30 @@
 				"organisation" : "Landcare Research",
 				"accessiblity" : "friendly",
 				"url" : "https://www.landcareresearch.co.nz/tools-and-resources/identification/what-is-this-bug/",
-				"summary" : "A interactive tool to help you identify bugs found around Aotearoa New Zealand."
+				"summary" : "A interactive website to help you identify bugs by inputing characteristics."
 			},
 			{ 
 				"title": "Stinkbugs",
 				"organisation" : "Landcare Research",
 				"accessiblity" : "friendly",
 				"url" : "https://www.landcareresearch.co.nz/tools-and-resources/identification/pentatomidae/quick-key/",
-				"summary" : "A guide to help id stink bugs/Pentatomidae of NZ"
+				"summary" : "Website to help id stink bugs/Pentatomidae of NZ"
 			},
 			{ 
 				"title": "A Photographic Guide to Freshwater Invertebrates of Taranaki's Rivers and Streams",
 				"organisation" : "Taranaki Regional Council",
 				"accessiblity" : "friendly",
 				"url" : "https://www.trc.govt.nz/assets/Documents/Research-reviews/Freshwater/Photographic-Guide-sm.pdf",
-				"summary" : "Includes things like mayfiles, damselfiles, worms, snails, files."
-			},			{ 
+				"summary" : "Document with photos; includes things like mayfiles, damselfiles, worms, snails, files."
+			},
+			{ 
+				"title": "Freshwater invertebrates guide",
+				"organisation" : "Landcare Research",
+				"accessiblity" : "friendly",
+				"url" : "https://www.landcareresearch.co.nz/tools-and-resources/identification/freshwater-invertebrates-guide/identification-guide-what-freshwater-invertebrate-is-this/",
+				"summary" : "Interactive website that asks questions to lead to an id."
+			},
+			{ 
 				"title": "New Zealand Butterfly Identification Guide",
 				"organisation" : "",
 				"accessiblity" : "friendly",
