@@ -19,13 +19,18 @@ function Guide({guide}) {
 
   let organisation = guide.organisation != "" ? <span> ({guide.organisation})</span> : "";
 
+  let scientific = guide.accessiblity==="scientific" ? <span className="scientific-indicator material-symbols-outlined" title="This guide uses scientific language and probably isn't very user friendly.">science</span> : "";
+
   return (
     <div className="guide">
       <a href={guide.url} target="_blank"><span title="open this guide in a new window" class="material-symbols-outlined open-guide-icon">open_in_new</span></a>
       <div className="guide-title">
         {guide.title}{organisation}
       </div>
-      <div className="guide-summary">{guide.summary}</div>
+      <div className="guide-summary">
+        {scientific}
+        {guide.summary}
+      </div>
     </div>
   )
 }

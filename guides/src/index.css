@@ -80,3 +80,9 @@ code {
 a .open-guide-icon {
   color: #D7BA7D;
 }
+
+.scientific-indicator {
+  vertical-align: text-bottom;
+  font-size: 18px;
+  margin-right: 2px;
+}
